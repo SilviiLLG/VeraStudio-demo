@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta name="description" content="VÉRA Studio — indumentaria contemporánea. Descubrí prendas esenciales y nuevas colecciones.">
+  <title>VÉRA Studio — Wear your identity</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">ENVÍO GRATIS EN COMPRAS SUPERIORES A $120.000 <span>✳</span> NUEVA COLECCIÓN DISPONIBLE</div>
+  <header class="site-header">
+    <button class="icon-button menu-toggle" id="menuToggle" aria-label="Abrir menú"><span></span><span></span></button>
+    <a class="wordmark" href="#" aria-label="VÉRA Studio inicio">VÉRA<span>®</span></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#coleccion" data-category-link="all">Colección</a>
+      <a href="#coleccion" data-category-link="Mujer">Mujer</a>
+      <a href="#coleccion" data-category-link="Hombre">Hombre</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-toggle" id="searchToggle" aria-label="Buscar"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-button cart-trigger" id="cartTrigger" aria-label="Abrir carrito"><svg viewBox="0 0 24 24"><path d="M4 8h16l-1.2 12H5.2L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=2200&q=88" alt="Campaña editorial de moda VÉRA Studio">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">COLECCIÓN 2026 · VOL. 02</p>
+        <h1>Vestí tu<br><em>propia</em> historia.</h1>
+        <p class="hero-copy">Piezas esenciales. Actitud propia.<br>Diseñadas para acompañarte.</p>
+        <a class="button button-light" href="#coleccion">DESCUBRIR COLECCIÓN <span>↗</span></a>
+      </div>
+      <div class="hero-side-note">BUENOS AIRES · EST. 2026</div>
+      <div class="hero-index"><span>01</span> / 03</div>
+    </section>
+
+    <section class="ticker" aria-label="Filosofía de marca"><div class="ticker-track"><span>LESS, BUT BETTER</span><b>✳</b><span>MADE TO MOVE</span><b>✳</b><span>YOUR STYLE, YOUR RULES</span><b>✳</b><span>LESS, BUT BETTER</span><b>✳</b><span>MADE TO MOVE</span><b>✳</b></div></section>
+
+    <section class="collection section-wrap" id="coleccion">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 — THE COLLECTION</p><h2>Elegí tu <em>esencia.</em></h2></div>
+        <p class="section-description">Una selección de básicos elevados y piezas protagonistas para crear tu propio lenguaje.</p>
+      </div>
+      <div class="shop-toolbar">
+        <div class="category-tabs" id="categoryTabs">
+          <button class="tab active" data-category="all">Todo <span>08</span></button>
+          <button class="tab" data-category="Mujer">Mujer</button>
+          <button class="tab" data-category="Hombre">Hombre</button>
+          <button class="tab" data-category="Accesorios">Accesorios</button>
+        </div>
+        <div class="toolbar-right">
+          <label class="search-box" id="searchBox"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="searchInput" type="search" placeholder="Buscar prendas..." aria-label="Buscar prendas"></label>
+          <select id="sortSelect" aria-label="Ordenar productos"><option value="featured">Destacados</option><option value="low">Menor precio</option><option value="high">Mayor precio</option><option value="name">Nombre A-Z</option></select>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="empty-state hidden" id="emptyState">No encontramos productos con esa búsqueda. Probá con otra palabra.</p>
+      <div class="collection-bottom"><span>VÉRA STUDIO — SELECCIÓN CURADA</span><span id="resultCount">08 PRODUCTOS</span></div>
+    </section>
+
+    <section class="editorial" id="lookbook">
+      <div class="editorial-image"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1300&q=85" alt="Editorial de moda urbana"></div>
+      <div class="editorial-copy"><p class="eyebrow light">02 — THE VÉRA ATTITUDE</p><h2>No se trata<br>de seguir.<br><em>Se trata de ser.</em></h2><p>Creemos en las prendas que hablan sin levantar la voz. Siluetas simples, detalles que importan y libertad para combinarlas a tu manera.</p><a class="text-link light-link" href="#coleccion">EXPLORAR PRENDAS <span>↗</span></a><div class="editorial-number">V / 026</div></div>
+    </section>
+
+    <section class="values section-wrap" id="nosotros">
+      <div class="section-heading"><div><p class="eyebrow">03 — OUR PHILOSOPHY</p><h2>Menos ruido.<br><em>Más identidad.</em></h2></div><p class="section-description">VÉRA nace de una idea simple: vestirse también es una forma de expresión. Creamos una experiencia digital donde cada detalle tiene intención.</p></div>
+      <div class="value-grid">
+        <article><span>01</span><h3>Diseño consciente</h3><p>Prendas versátiles, líneas limpias y detalles pensados para durar más allá de una temporada.</p></article>
+        <article><span>02</span><h3>Estilo personal</h3><p>No imponemos tendencias. Te damos piezas para construir una identidad que sea solamente tuya.</p></article>
+        <article><span>03</span><h3>Experiencia simple</h3><p>Una navegación clara, información transparente y una compra diseñada para disfrutarse.</p></article>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow light">STAY IN THE LOOP</p><h2>Las novedades<br>te quedan bien.</h2><p>Suscribite para enterarte de nuevos lanzamientos y colecciones.</p>
+      <form id="newsletterForm" class="newsletter-form"><input type="email" id="newsletterEmail" placeholder="Tu email" required aria-label="Tu email"><button type="submit">QUIERO ENTERARME ↗</button></form>
+      <small class="demo-note">Experiencia demostrativa · No se envían correos reales.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark footer-mark" href="#">VÉRA<span>®</span></a><p>WEAR YOUR IDENTITY.</p><div><a href="#coleccion">Tienda</a><a href="#lookbook">Lookbook</a><a href="#nosotros">La marca</a></div><small>© 2026 VÉRA STUDIO. PROYECTO DEMOSTRATIVO DESARROLLADO POR TEKNOVYA.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">TU SELECCIÓN</p><h2>Mi carrito <span id="drawerCount">(0)</span></h2></div><button class="close-button" id="closeCart" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>✳</span><h3>Tu carrito está vacío</h3><p>Hay prendas esperando por vos.</p><button class="text-link" id="continueShopping">SEGUIR EXPLORANDO ↗</button></div>
+    <div class="cart-footer" id="cartFooter"><div class="shipping-progress"><span id="shippingMessage">Te faltan $120.000 para obtener envío gratis.</span><div><i id="shippingProgress"></i></div></div><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div><p class="cart-disclaimer">Envío e impuestos se calculan al finalizar.</p><button class="button button-dark full-button" id="checkoutButton">FINALIZAR COMPRA <span>↗</span></button></div>
+  </aside>
+
+  <section class="product-modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Detalle del producto"><button class="close-button modal-close" id="closeModal" aria-label="Cerrar">×</button><div id="modalContent"></div></section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
